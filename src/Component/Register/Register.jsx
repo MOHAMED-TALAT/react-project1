@@ -55,7 +55,7 @@ let resultValidate = schema.validate(user , {abortEarly : false})
 
 if(resultValidate.error == undefined){
 
-  let {data} = await axios.post('https://route-movies-api.vercel.app/signup', user)
+  let {data} = await axios.post('https://movies-api.routemisr.com/signup', user)
 
   if(data.message == "success"){
     navigate("/login")
